@@ -7,6 +7,9 @@
 <meta name="description" content="Настольная утилита для Windows: ставит выбранные программы через winget одной кнопкой. Поиск, категории, иконки, тёмная тема и живой журнал. Скачать installer.jar.">
 <meta name="color-scheme" content="dark light">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="icons/Google.Chrome.png">
 </head>
 <body>
@@ -14,13 +17,13 @@
 <a class="skip" href="#main">Перейти к содержимому</a>
 
 <header class="topbar">
-  <a class="brand" href="#top" aria-label="i. установщик по">
-    <span class="brand-mark">i</span>
+  <div class="brand">
+    <a class="brand-mark" href="#top" aria-label="i. установщик по">i</a>
     <span class="brand-text">
-      <b>i. установщик по</b>
-      <small>создано студией i.</small>
+      <a class="brand-name" href="#top">i. установщик по</a>
+      <small class="studio-credit">создано студией <a href="https://doinwor.github.io/go-ecosystem/i-site/" target="_blank" rel="noopener">i.</a></small>
     </span>
-  </a>
+  </div>
 
   <nav class="nav" aria-label="Разделы">
     <a href="#features">Возможности</a>
@@ -78,7 +81,7 @@
         <div class="mock-title">
           <span class="mock-dots"><i></i><i></i><i></i></span>
           <span class="mock-name">i. установщик по</span>
-          <span class="mock-credit">создано студией i.</span>
+          <span class="mock-credit studio-credit">создано студией i.</span>
         </div>
         <div class="mock-body">
           <div class="mock-toolbar">
@@ -329,7 +332,7 @@
     <span class="dot">·</span>
     <span>версия 1.0.0</span>
     <span class="dot">·</span>
-    <span>создано студией i.</span>
+    <span class="studio-credit">создано студией <a href="https://doinwor.github.io/go-ecosystem/i-site/" target="_blank" rel="noopener">i.</a></span>
     <span class="dot">·</span>
     <span id="footerYear">2026</span>
   </div>
