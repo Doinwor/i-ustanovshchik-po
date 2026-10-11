@@ -33,7 +33,7 @@
     <button class="icon-btn" id="themeToggle" type="button" aria-label="Переключить тему">
       <span id="themeIcon">☀</span>
     </button>
-    <a class="btn btn-primary" href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0.exe">Скачать для Windows</a>
+    <a class="btn btn-primary" href="#download">Скачать для Windows</a>
   </div>
 </header>
 
@@ -51,8 +51,7 @@
       </p>
 
       <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" id="heroDownload"
-           href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0.exe">
+        <a class="btn btn-primary btn-lg" id="heroDownload" href="#download">
           <span class="dl-ico" aria-hidden="true">⬇</span> Скачать для Windows (.exe)
         </a>
         <a class="btn btn-ghost btn-lg" href="#programs">Список программ</a>
@@ -305,7 +304,7 @@
         <p class="lead">Один файл, одна кнопка — и компьютер настроен.</p>
       </div>
       <div class="cta-actions">
-        <a class="btn btn-primary btn-lg" id="finalDownload"
+        <a class="btn btn-primary btn-lg" id="finalDownload" data-captcha-download
            href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0.exe">
           <span class="dl-ico" aria-hidden="true">⬇</span> Скачать для Windows (.exe)
         </a>
@@ -336,7 +335,18 @@
   </div>
 </footer>
 
+<!-- Капча перед скачиванием -->
+<div class="cap-modal" id="capModal" hidden>
+  <div class="cap-dialog" role="dialog" aria-modal="true" aria-labelledby="capTitle">
+    <button class="cap-close" id="capClose" type="button" aria-label="Закрыть">✕</button>
+    <h3 id="capTitle">Подтвердите, что вы не робот</h3>
+    <p>Пройдите проверку — загрузка начнётся автоматически.</p>
+    <iframe class="cap-frame" id="capFrame" title="Капча i." scrolling="no" src="about:blank"></iframe>
+  </div>
+</div>
+
 <script src="js/programs.js"></script>
 <script src="js/app.js"></script>
+<script src="js/download.js"></script>
 </body>
 </html>

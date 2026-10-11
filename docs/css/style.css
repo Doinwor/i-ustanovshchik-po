@@ -695,3 +695,61 @@ pre code {
   html { scroll-behavior: auto; }
   .card, .program, .icon-btn { transition: none; }
 }
+
+/* ---------------- Капча перед скачиванием ---------------- */
+
+html.cap-open { overflow: hidden; }
+
+.cap-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(8, 10, 14, .68);
+  backdrop-filter: blur(3px);
+  animation: cap-fade .16s ease;
+}
+.cap-modal[hidden] { display: none; }
+
+.cap-dialog {
+  position: relative;
+  width: 520px;
+  max-width: 100%;
+  padding: 22px 22px 18px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.cap-dialog h3 { margin: 0 0 4px; font-size: 18px; }
+.cap-dialog p { margin: 0 0 16px; color: var(--text-dim); font-size: 14px; }
+
+.cap-frame {
+  display: block;
+  width: 100%;
+  height: 180px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.cap-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-soft);
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+.cap-close:hover { color: var(--text); border-color: var(--accent); }
+
+@keyframes cap-fade { from { opacity: 0; } to { opacity: 1; } }
