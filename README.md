@@ -6,9 +6,10 @@
 
 ## Скачать
 
-* **Windows (EXE, Java уже внутри):**
-  [i-ustanovshchik-po-1.0.0-windows-x64.zip](https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0-windows-x64.zip)
-  — распаковать и запустить `i-ustanovshchik-po.exe`, устанавливать Java не нужно.
+* **Windows (приложение, Java уже внутри):**
+  [i-ustanovshchik-po-1.0.0.exe](https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0.exe)
+  — один файл: запустить, установить и открыть. Java не нужна, рантайм 21 встроен,
+  создаётся ярлык в меню «Пуск» и на рабочем столе.
 * **Портативный JAR (нужен Java 21):**
   [installer.jar](https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/installer.jar)
   — запуск командой `java -jar installer.jar`.
@@ -47,20 +48,21 @@ java -jar dist\installer.jar
 
 ## Сборка EXE
 
-Из готового jar собирается нативное приложение `i-ustanovshchik-po.exe` со встроенной
-Java (`jpackage` из JDK 21, плюс `jlink` для компактного рантайма):
+Из готового jar собирается единый установщик `i-ustanovshchik-po-1.0.0.exe` со встроенной
+Java (`jpackage` из JDK 21 + `jlink` для компактного рантайма + WiX Toolset 3.14):
 
 ```
 jlink --add-modules java.base,java.desktop,java.prefs,java.logging,java.datatransfer,java.xml,jdk.unsupported ^
       --strip-debug --no-header-files --no-man-pages --output build\runtime
 
-jpackage --type app-image --name i-ustanovshchik-po --input build\pkg-input ^
+jpackage --type exe --name i-ustanovshchik-po --input build\pkg-input ^
       --main-jar installer.jar --main-class installer.Main --app-version 1.0.0 ^
-      --vendor "studio i." --runtime-image build\runtime --dest build\exe
+      --vendor "studio i." --runtime-image build\runtime --icon build\icon.ico ^
+      --win-per-user-install --win-shortcut --win-menu --dest build\installer
 ```
 
-Готовый комплект лежит в `build\exe\i-ustanovshchik-po\` и запускается файлом
-`i-ustanovshchik-po.exe`.
+Результат: один файл `build\installer\i-ustanovshchik-po-1.0.0.exe` (иконка, ярлыки,
+ярлык в «Пуск» и штатное удаление через «Приложения и возможности»).
 
 ## Как пользоваться
 
