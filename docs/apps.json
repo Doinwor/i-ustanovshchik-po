@@ -1,0 +1,786 @@
+[
+  {
+    "id": "Google.Chrome",
+    "name": "Google Chrome",
+    "category": "Браузеры",
+    "description": "Быстрый браузер от Google.",
+    "domain": "google.com"
+  },
+  {
+    "id": "Mozilla.Firefox",
+    "name": "Mozilla Firefox",
+    "category": "Браузеры",
+    "description": "Открытый браузер на движке Gecko.",
+    "domain": "mozilla.org"
+  },
+  {
+    "id": "Brave.Brave",
+    "name": "Brave",
+    "category": "Браузеры",
+    "description": "Браузер с блокировкой рекламы и трекеров.",
+    "domain": "brave.com"
+  },
+  {
+    "id": "Opera.Opera",
+    "name": "Opera",
+    "category": "Браузеры",
+    "description": "Браузер со встроенным VPN и блокировщиком.",
+    "domain": "opera.com"
+  },
+  {
+    "id": "Yandex.Browser",
+    "name": "Яндекс Браузер",
+    "category": "Браузеры",
+    "description": "Браузер Яндекса.",
+    "domain": "yandex.ru"
+  },
+  {
+    "id": "LibreWolf.LibreWolf",
+    "name": "LibreWolf",
+    "category": "Браузеры",
+    "description": "Firefox без телеметрии, с усиленной приватностью.",
+    "domain": "librewolf.net"
+  },
+  {
+    "id": "Mozilla.Thunderbird",
+    "name": "Mozilla Thunderbird",
+    "category": "Общение",
+    "description": "Почтовый клиент от Mozilla.",
+    "domain": "thunderbird.net"
+  },
+  {
+    "id": "Telegram.TelegramDesktop",
+    "name": "Telegram Desktop",
+    "category": "Общение",
+    "description": "Мессенджер Telegram для ПК.",
+    "domain": "telegram.org"
+  },
+  {
+    "id": "Discord.Discord",
+    "name": "Discord",
+    "category": "Общение",
+    "description": "Голосовой и текстовый чат.",
+    "domain": "discord.com"
+  },
+  {
+    "id": "SlackTechnologies.Slack",
+    "name": "Slack",
+    "category": "Общение",
+    "description": "Корпоративный мессенджер.",
+    "domain": "slack.com"
+  },
+  {
+    "id": "Zoom.Zoom",
+    "name": "Zoom",
+    "category": "Общение",
+    "description": "Видеоконференции и созвоны.",
+    "domain": "zoom.us"
+  },
+  {
+    "id": "Microsoft.Teams",
+    "name": "Microsoft Teams",
+    "category": "Общение",
+    "description": "Корпоративные чаты и встречи Microsoft.",
+    "domain": "teams.microsoft.com"
+  },
+  {
+    "id": "Rakuten.Viber",
+    "name": "Viber",
+    "category": "Общение",
+    "description": "Мессенджер и звонки.",
+    "domain": "viber.com"
+  },
+  {
+    "id": "OpenWhisperSystems.Signal",
+    "name": "Signal",
+    "category": "Общение",
+    "description": "Защищённый мессенджер с шифрованием.",
+    "domain": "signal.org"
+  },
+  {
+    "id": "VideoLAN.VLC",
+    "name": "VLC media player",
+    "category": "Мультимедиа",
+    "description": "Универсальный медиаплеер, играет почти всё.",
+    "domain": "videolan.org"
+  },
+  {
+    "id": "Spotify.Spotify",
+    "name": "Spotify",
+    "category": "Мультимедиа",
+    "description": "Музыкальный стриминговый сервис.",
+    "domain": "spotify.com"
+  },
+  {
+    "id": "Yandex.Music",
+    "name": "Яндекс Музыка",
+    "category": "Мультимедиа",
+    "description": "Музыкальный сервис Яндекса.",
+    "domain": "music.yandex.ru"
+  },
+  {
+    "id": "AIMP.AIMP",
+    "name": "AIMP",
+    "category": "Мультимедиа",
+    "description": "Лёгкий аудиоплеер.",
+    "domain": "aimp.ru"
+  },
+  {
+    "id": "Audacity.Audacity",
+    "name": "Audacity",
+    "category": "Мультимедиа",
+    "description": "Редактор аудио и запись звука.",
+    "domain": "audacityteam.org"
+  },
+  {
+    "id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "category": "Мультимедиа",
+    "description": "Запись экрана и стриминг.",
+    "domain": "obsproject.com"
+  },
+  {
+    "id": "HandBrake.HandBrake",
+    "name": "HandBrake",
+    "category": "Мультимедиа",
+    "description": "Конвертер видео.",
+    "domain": "handbrake.fr"
+  },
+  {
+    "id": "IrfanSkiljan.IrfanView",
+    "name": "IrfanView",
+    "category": "Мультимедиа",
+    "description": "Быстрый просмотрщик изображений.",
+    "domain": "irfanview.com"
+  },
+  {
+    "id": "Apple.iTunes",
+    "name": "iTunes",
+    "category": "Мультимедиа",
+    "description": "Медиаплеер и синхронизация устройств Apple.",
+    "domain": "apple.com"
+  },
+  {
+    "id": "Valve.Steam",
+    "name": "Steam",
+    "category": "Игры",
+    "description": "Игровая платформа и магазин Valve.",
+    "domain": "steampowered.com"
+  },
+  {
+    "id": "EpicGames.EpicGamesLauncher",
+    "name": "Epic Games Launcher",
+    "category": "Игры",
+    "description": "Магазин и запуск игр Epic.",
+    "domain": "epicgames.com"
+  },
+  {
+    "id": "GOG.Galaxy",
+    "name": "GOG Galaxy",
+    "category": "Игры",
+    "description": "Клиент магазина GOG.",
+    "domain": "gog.com"
+  },
+  {
+    "id": "ElectronicArts.EADesktop",
+    "name": "EA app",
+    "category": "Игры",
+    "description": "Клиент Electronic Arts.",
+    "domain": "ea.com"
+  },
+  {
+    "id": "Ubisoft.Connect",
+    "name": "Ubisoft Connect",
+    "category": "Игры",
+    "description": "Клиент игр Ubisoft.",
+    "domain": "ubisoft.com"
+  },
+  {
+    "id": "Microsoft.VisualStudioCode",
+    "name": "Visual Studio Code",
+    "category": "Разработка",
+    "description": "Редактор кода от Microsoft.",
+    "domain": "code.visualstudio.com"
+  },
+  {
+    "id": "Microsoft.VisualStudio.2022.Community",
+    "name": "Visual Studio 2022 Community",
+    "category": "Разработка",
+    "description": "Среда разработки для .NET и C++.",
+    "domain": "visualstudio.microsoft.com"
+  },
+  {
+    "id": "JetBrains.IntelliJIDEA.Community",
+    "name": "IntelliJ IDEA Community",
+    "category": "Разработка",
+    "description": "IDE для Java и Kotlin.",
+    "domain": "jetbrains.com"
+  },
+  {
+    "id": "JetBrains.PyCharm.Community",
+    "name": "PyCharm Community",
+    "category": "Разработка",
+    "description": "IDE для Python.",
+    "domain": "jetbrains.com"
+  },
+  {
+    "id": "Git.Git",
+    "name": "Git",
+    "category": "Разработка",
+    "description": "Система контроля версий.",
+    "domain": "git-scm.com"
+  },
+  {
+    "id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "category": "Разработка",
+    "description": "Клиент GitHub для Git.",
+    "domain": "github.com"
+  },
+  {
+    "id": "Python.Python.3.13",
+    "name": "Python 3.13",
+    "category": "Разработка",
+    "description": "Язык программирования Python.",
+    "domain": "python.org"
+  },
+  {
+    "id": "Python.Python.3.12",
+    "name": "Python 3.12",
+    "category": "Разработка",
+    "description": "Предыдущая ветка Python.",
+    "domain": "python.org"
+  },
+  {
+    "id": "OpenJS.NodeJS.LTS",
+    "name": "Node.js (LTS)",
+    "category": "Разработка",
+    "description": "Среда выполнения JavaScript.",
+    "domain": "nodejs.org"
+  },
+  {
+    "id": "EclipseAdoptium.Temurin.21.JDK",
+    "name": "Temurin JDK 21",
+    "category": "Разработка",
+    "description": "OpenJDK от Eclipse Adoptium.",
+    "domain": "adoptium.net"
+  },
+  {
+    "id": "Docker.DockerDesktop",
+    "name": "Docker Desktop",
+    "category": "Разработка",
+    "description": "Контейнеры Docker для Windows.",
+    "domain": "docker.com"
+  },
+  {
+    "id": "Postman.Postman",
+    "name": "Postman",
+    "category": "Разработка",
+    "description": "Тестирование HTTP API.",
+    "domain": "postman.com"
+  },
+  {
+    "id": "DBeaver.DBeaver.Community",
+    "name": "DBeaver Community",
+    "category": "Разработка",
+    "description": "Универсальный клиент баз данных.",
+    "domain": "dbeaver.io"
+  },
+  {
+    "id": "PostgreSQL.PostgreSQL.16",
+    "name": "PostgreSQL 16",
+    "category": "Разработка",
+    "description": "Реляционная база данных.",
+    "domain": "postgresql.org"
+  },
+  {
+    "id": "Notepad++.Notepad++",
+    "name": "Notepad++",
+    "category": "Разработка",
+    "description": "Лёгкий текстовый редактор.",
+    "domain": "notepad-plus-plus.org"
+  },
+  {
+    "id": "SublimeHQ.SublimeText.4",
+    "name": "Sublime Text 4",
+    "category": "Разработка",
+    "description": "Быстрый редактор кода.",
+    "domain": "sublimetext.com"
+  },
+  {
+    "id": "Microsoft.WindowsTerminal",
+    "name": "Windows Terminal",
+    "category": "Разработка",
+    "description": "Современный терминал Windows.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "Microsoft.PowerShell",
+    "name": "PowerShell 7",
+    "category": "Разработка",
+    "description": "Кроссплатформенная оболочка Microsoft.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "PuTTY.PuTTY",
+    "name": "PuTTY",
+    "category": "Разработка",
+    "description": "SSH- и telnet-клиент.",
+    "domain": "putty.org"
+  },
+  {
+    "id": "Mobatek.MobaXterm",
+    "name": "MobaXterm",
+    "category": "Разработка",
+    "description": "Терминал с SSH, X11 и SFTP.",
+    "domain": "mobaxterm.mobatek.net"
+  },
+  {
+    "id": "WiresharkFoundation.Wireshark",
+    "name": "Wireshark",
+    "category": "Разработка",
+    "description": "Анализ сетевого трафика.",
+    "domain": "wireshark.org"
+  },
+  {
+    "id": "WinMerge.WinMerge",
+    "name": "WinMerge",
+    "category": "Разработка",
+    "description": "Сравнение файлов и папок.",
+    "domain": "winmerge.org"
+  },
+  {
+    "id": "Microsoft.Office",
+    "name": "Microsoft 365",
+    "category": "Офис",
+    "description": "Word, Excel, PowerPoint и другие.",
+    "domain": "office.com"
+  },
+  {
+    "id": "TheDocumentFoundation.LibreOffice",
+    "name": "LibreOffice",
+    "category": "Офис",
+    "description": "Свободный офисный пакет.",
+    "domain": "libreoffice.org"
+  },
+  {
+    "id": "Adobe.Acrobat.Reader.64-bit",
+    "name": "Adobe Acrobat Reader",
+    "category": "Офис",
+    "description": "Просмотр PDF от Adobe.",
+    "domain": "adobe.com"
+  },
+  {
+    "id": "SumatraPDF.SumatraPDF",
+    "name": "SumatraPDF",
+    "category": "Офис",
+    "description": "Лёгкий просмотрщик PDF.",
+    "domain": "sumatrapdfreader.org"
+  },
+  {
+    "id": "geeksoftwareGmbH.PDF24Creator",
+    "name": "PDF24 Creator",
+    "category": "Офис",
+    "description": "Набор инструментов для PDF.",
+    "domain": "pdf24.org"
+  },
+  {
+    "id": "Notion.Notion",
+    "name": "Notion",
+    "category": "Офис",
+    "description": "Заметки и база знаний.",
+    "domain": "notion.so"
+  },
+  {
+    "id": "Obsidian.Obsidian",
+    "name": "Obsidian",
+    "category": "Офис",
+    "description": "Заметки в Markdown с графом связей.",
+    "domain": "obsidian.md"
+  },
+  {
+    "id": "Joplin.Joplin",
+    "name": "Joplin",
+    "category": "Офис",
+    "description": "Заметки с синхронизацией.",
+    "domain": "joplinapp.org"
+  },
+  {
+    "id": "calibre.calibre",
+    "name": "calibre",
+    "category": "Офис",
+    "description": "Библиотека и конвертер электронных книг.",
+    "domain": "calibre-ebook.com"
+  },
+  {
+    "id": "DigitalScholar.Zotero",
+    "name": "Zotero",
+    "category": "Офис",
+    "description": "Менеджер библиографии.",
+    "domain": "zotero.org"
+  },
+  {
+    "id": "7zip.7zip",
+    "name": "7-Zip",
+    "category": "Утилиты",
+    "description": "Бесплатный архиватор.",
+    "domain": "7-zip.org"
+  },
+  {
+    "id": "RARLab.WinRAR",
+    "name": "WinRAR",
+    "category": "Утилиты",
+    "description": "Архиватор RAR.",
+    "domain": "rarlab.com"
+  },
+  {
+    "id": "qBittorrent.qBittorrent",
+    "name": "qBittorrent",
+    "category": "Утилиты",
+    "description": "Торрент-клиент без рекламы.",
+    "domain": "qbittorrent.org"
+  },
+  {
+    "id": "Microsoft.PowerToys",
+    "name": "Microsoft PowerToys",
+    "category": "Утилиты",
+    "description": "Набор полезных утилит для Windows.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "voidtools.Everything",
+    "name": "Everything",
+    "category": "Утилиты",
+    "description": "Мгновенный поиск файлов.",
+    "domain": "voidtools.com"
+  },
+  {
+    "id": "Rufus.Rufus",
+    "name": "Rufus",
+    "category": "Утилиты",
+    "description": "Создание загрузочных USB-флешек.",
+    "domain": "rufus.ie"
+  },
+  {
+    "id": "CPUID.CPU-Z",
+    "name": "CPU-Z",
+    "category": "Утилиты",
+    "description": "Информация о процессоре и памяти.",
+    "domain": "cpuid.com"
+  },
+  {
+    "id": "TechPowerUp.GPU-Z",
+    "name": "GPU-Z",
+    "category": "Утилиты",
+    "description": "Информация о видеокарте.",
+    "domain": "techpowerup.com"
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskInfo",
+    "name": "CrystalDiskInfo",
+    "category": "Утилиты",
+    "description": "Здоровье дисков (S.M.A.R.T.).",
+    "domain": "crystalmark.info"
+  },
+  {
+    "id": "RevoUninstaller.RevoUninstaller",
+    "name": "Revo Uninstaller",
+    "category": "Утилиты",
+    "description": "Полное удаление программ.",
+    "domain": "revouninstaller.com"
+  },
+  {
+    "id": "Piriform.CCleaner",
+    "name": "CCleaner",
+    "category": "Утилиты",
+    "description": "Очистка системы от мусора.",
+    "domain": "ccleaner.com"
+  },
+  {
+    "id": "ShareX.ShareX",
+    "name": "ShareX",
+    "category": "Утилиты",
+    "description": "Скриншоты, запись экрана, загрузка файлов.",
+    "domain": "getsharex.com"
+  },
+  {
+    "id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "category": "Утилиты",
+    "description": "Быстрые скриншоты с аннотациями.",
+    "domain": "getgreenshot.org"
+  },
+  {
+    "id": "Flameshot.Flameshot",
+    "name": "Flameshot",
+    "category": "Утилиты",
+    "description": "Скриншоты с редактором.",
+    "domain": "flameshot.org"
+  },
+  {
+    "id": "CharlesMilette.TranslucentTB",
+    "name": "TranslucentTB",
+    "category": "Утилиты",
+    "description": "Прозрачная панель задач.",
+    "domain": "github.com"
+  },
+  {
+    "id": "AutoHotkey.AutoHotkey",
+    "name": "AutoHotkey",
+    "category": "Утилиты",
+    "description": "Автоматизация действий и горячие клавиши.",
+    "domain": "autohotkey.com"
+  },
+  {
+    "id": "Bitwarden.Bitwarden",
+    "name": "Bitwarden",
+    "category": "Утилиты",
+    "description": "Менеджер паролей.",
+    "domain": "bitwarden.com"
+  },
+  {
+    "id": "KeePassXCTeam.KeePassXC",
+    "name": "KeePassXC",
+    "category": "Утилиты",
+    "description": "Локальный менеджер паролей.",
+    "domain": "keepassxc.org"
+  },
+  {
+    "id": "Yandex.Disk",
+    "name": "Яндекс Диск",
+    "category": "Утилиты",
+    "description": "Облачное хранилище Яндекса.",
+    "domain": "disk.yandex.ru"
+  },
+  {
+    "id": "AnyDesk.AnyDesk",
+    "name": "AnyDesk",
+    "category": "Удалённый доступ",
+    "description": "Подключение к рабочему столу.",
+    "domain": "anydesk.com"
+  },
+  {
+    "id": "TeamViewer.TeamViewer",
+    "name": "TeamViewer",
+    "category": "Удалённый доступ",
+    "description": "Удалённый доступ и поддержка.",
+    "domain": "teamviewer.com"
+  },
+  {
+    "id": "NordSecurity.NordVPN",
+    "name": "NordVPN",
+    "category": "Удалённый доступ",
+    "description": "VPN-клиент NordVPN.",
+    "domain": "nordvpn.com"
+  },
+  {
+    "id": "Proton.ProtonVPN",
+    "name": "Proton VPN",
+    "category": "Удалённый доступ",
+    "description": "VPN от Proton.",
+    "domain": "protonvpn.com"
+  },
+  {
+    "id": "WireGuard.WireGuard",
+    "name": "WireGuard",
+    "category": "Удалённый доступ",
+    "description": "Быстрый VPN-клиент.",
+    "domain": "wireguard.com"
+  },
+  {
+    "id": "KDE.Krita",
+    "name": "Krita",
+    "category": "Графика",
+    "description": "Рисование и цифровая живопись.",
+    "domain": "krita.org"
+  },
+  {
+    "id": "GIMP.GIMP.3",
+    "name": "GIMP 3",
+    "category": "Графика",
+    "description": "Свободный редактор растровой графики.",
+    "domain": "gimp.org"
+  },
+  {
+    "id": "Inkscape.Inkscape",
+    "name": "Inkscape",
+    "category": "Графика",
+    "description": "Редактор векторной графики.",
+    "domain": "inkscape.org"
+  },
+  {
+    "id": "BlenderFoundation.Blender",
+    "name": "Blender",
+    "category": "Графика",
+    "description": "3D-моделирование и рендеринг.",
+    "domain": "blender.org"
+  },
+  {
+    "id": "Microsoft.VCRedist.2015+.x64",
+    "name": "Visual C++ Redistributable 2015–2022 (x64)",
+    "category": "Системные компоненты",
+    "description": "Без него не запускаются многие игры и программы.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "Microsoft.VCRedist.2015+.x86",
+    "name": "Visual C++ Redistributable 2015–2022 (x86)",
+    "category": "Системные компоненты",
+    "description": "Для 32-битных приложений.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "Microsoft.DirectX",
+    "name": "DirectX End-User Runtime",
+    "category": "Системные компоненты",
+    "description": "Компоненты DirectX для старых игр.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "Microsoft.DotNet.Framework.Runtime",
+    "name": ".NET Framework 4.8.1 Runtime",
+    "category": "Системные компоненты",
+    "description": "Нужен для многих старых программ.",
+    "domain": "microsoft.com"
+  },
+  {
+    "id": "CodecGuide.K-LiteCodecPack.Full",
+    "name": "K-Lite Codec Pack (Full)",
+    "category": "Мультимедиа",
+    "description": "Набор кодеков, чтобы играло любое видео.",
+    "domain": "codecguide.com"
+  },
+  {
+    "id": "clsid2.mpc-hc",
+    "name": "Media Player Classic – Home Cinema",
+    "category": "Мультимедиа",
+    "description": "Классический лёгкий плеер.",
+    "domain": "mpc-hc.org"
+  },
+  {
+    "id": "PeterPawlowski.foobar2000",
+    "name": "foobar2000",
+    "category": "Мультимедиа",
+    "description": "Легендарный аудиоплеер.",
+    "domain": "foobar2000.org"
+  },
+  {
+    "id": "Daum.PotPlayer",
+    "name": "PotPlayer",
+    "category": "Мультимедиа",
+    "description": "Очень популярный видеоплеер в СНГ.",
+    "domain": "potplayer.daum.net"
+  },
+  {
+    "id": "ByteDance.CapCut",
+    "name": "CapCut",
+    "category": "Мультимедиа",
+    "description": "Популярный простой видеоредактор.",
+    "domain": "capcut.com"
+  },
+  {
+    "id": "Guru3D.Afterburner",
+    "name": "MSI Afterburner",
+    "category": "Утилиты",
+    "description": "Мониторинг температуры и разгон видеокарты.",
+    "domain": "msi.com"
+  },
+  {
+    "id": "REALiX.HWiNFO",
+    "name": "HWiNFO",
+    "category": "Утилиты",
+    "description": "Подробная информация о железе.",
+    "domain": "hwinfo.com"
+  },
+  {
+    "id": "Ghisler.TotalCommander",
+    "name": "Total Commander",
+    "category": "Утилиты",
+    "description": "Легендарный файловый менеджер.",
+    "domain": "ghisler.com"
+  },
+  {
+    "id": "Ditto.Ditto",
+    "name": "Ditto",
+    "category": "Утилиты",
+    "description": "Менеджер буфера обмена.",
+    "domain": "sourceforge.net"
+  },
+  {
+    "id": "Google.GoogleDrive",
+    "name": "Google Drive",
+    "category": "Утилиты",
+    "description": "Облачное хранилище Google.",
+    "domain": "drive.google.com"
+  },
+  {
+    "id": "Dropbox.Dropbox",
+    "name": "Dropbox",
+    "category": "Утилиты",
+    "description": "Облачное хранилище Dropbox.",
+    "domain": "dropbox.com"
+  },
+  {
+    "id": "Evernote.Evernote",
+    "name": "Evernote",
+    "category": "Утилиты",
+    "description": "Заметки с синхронизацией.",
+    "domain": "evernote.com"
+  },
+  {
+    "id": "Intel.IntelDriverAndSupportAssistant",
+    "name": "Intel Driver & Support Assistant",
+    "category": "Утилиты",
+    "description": "Обновление драйверов Intel.",
+    "domain": "intel.com"
+  },
+  {
+    "id": "Logitech.GHUB",
+    "name": "Logitech G HUB",
+    "category": "Утилиты",
+    "description": "Настройка мышек и клавиатур Logitech.",
+    "domain": "logitechg.com"
+  },
+  {
+    "id": "Adobe.CreativeCloud",
+    "name": "Adobe Creative Cloud",
+    "category": "Работа и офис",
+    "description": "Установщик Photoshop, Illustrator и других.",
+    "domain": "adobe.com"
+  },
+  {
+    "id": "Kingsoft.WPSOffice",
+    "name": "WPS Office",
+    "category": "Работа и офис",
+    "description": "Бесплатный аналог Microsoft Office.",
+    "domain": "wps.com"
+  },
+  {
+    "id": "Blizzard.BattleNet",
+    "name": "Battle.net",
+    "category": "Игры",
+    "description": "Для World of Warcraft, Overwatch, Diablo.",
+    "domain": "blizzard.com"
+  },
+  {
+    "id": "Mojang.MinecraftLauncher",
+    "name": "Minecraft Launcher",
+    "category": "Игры",
+    "description": "Официальный лаунчер Minecraft.",
+    "domain": "minecraft.net"
+  },
+  {
+    "id": "Malwarebytes.Malwarebytes",
+    "name": "Malwarebytes",
+    "category": "Безопасность",
+    "description": "Популярная антивирусная проверка.",
+    "domain": "malwarebytes.com"
+  },
+  {
+    "id": "Malwarebytes.AdwCleaner",
+    "name": "AdwCleaner",
+    "category": "Безопасность",
+    "description": "Чистка от рекламных программ.",
+    "domain": "malwarebytes.com"
+  }
+]

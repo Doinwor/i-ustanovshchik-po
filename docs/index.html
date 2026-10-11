@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>i. установщик по — установка программ одной кнопкой</title>
+<meta name="description" content="Настольная утилита для Windows: ставит выбранные программы через winget одной кнопкой. Поиск, категории, иконки, тёмная тема и живой журнал. Скачать installer.jar.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="icons/Google.Chrome.png">
+</head>
+<body>
+
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="i. установщик по">
+    <span class="brand-mark">i</span>
+    <span class="brand-text">
+      <b>i. установщик по</b>
+      <small>создано студией i.</small>
+    </span>
+  </a>
+
+  <nav class="nav" aria-label="Разделы">
+    <a href="#features">Возможности</a>
+    <a href="#programs">Программы</a>
+    <a href="#run">Как запустить</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+
+  <div class="topbar-right">
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Переключить тему">
+      <span id="themeIcon">☀</span>
+    </button>
+    <a class="btn btn-primary" href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0-windows-x64.zip">Скачать для Windows</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <span class="pill">Windows 10/11 · winget · Java</span>
+      <h1>Установка программ <span class="grad">одной кнопкой</span></h1>
+      <p class="lead">
+        Настольная утилита на Java, которая ставит выбранные приложения через
+        <b>winget</b>. Отмечаете галочками, жмёте кнопку — получаете готовый
+        набор софта с иконками, поиском, категориями и понятным журналом.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" id="heroDownload"
+           href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0-windows-x64.zip">
+          <span class="dl-ico" aria-hidden="true">⬇</span> Скачать для Windows (.exe)
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#programs">Список программ</a>
+      </div>
+
+      <p class="download-meta">
+        Версия 1.0.0 · <span id="fileSize">≈ 27 МБ (zip)</span> · Windows 10/11 · Java уже внутри
+      </p>
+      <p class="download-meta">
+        Портативная версия: <a href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/installer.jar">installer.jar</a>
+        (потребуется Java 21)
+      </p>
+
+      <ul class="stats">
+        <li><b id="statPrograms">—</b><span>программ</span></li>
+        <li><b id="statCategories">—</b><span>категорий</span></li>
+        <li><b>1</b><span>кнопка установки</span></li>
+      </ul>
+    </div>
+
+    <!-- Статичный макет окна программы (без анимации) -->
+    <div class="hero-visual">
+      <div class="mock" aria-hidden="true">
+        <div class="mock-title">
+          <span class="mock-dots"><i></i><i></i><i></i></span>
+          <span class="mock-name">i. установщик по</span>
+          <span class="mock-credit">создано студией i.</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-toolbar">
+            <span class="mock-select">Все категории ▾</span>
+            <span class="mock-search">Поиск: название, категория или winget ID</span>
+          </div>
+          <table class="mock-table">
+            <tbody>
+              <tr>
+                <td class="mc"><span class="cbx on"></span></td>
+                <td class="mname"><img src="icons/Google.Chrome.png" alt="">Google Chrome</td>
+                <td class="mcat">Браузеры</td>
+                <td class="mstat ok">Готово</td>
+              </tr>
+              <tr>
+                <td class="mc"><span class="cbx on"></span></td>
+                <td class="mname"><img src="icons/VideoLAN.VLC.png" alt="">VLC media player</td>
+                <td class="mcat">Мультимедиа</td>
+                <td class="mstat run">Установка...</td>
+              </tr>
+              <tr>
+                <td class="mc"><span class="cbx"></span></td>
+                <td class="mname"><img src="icons/Discord.Discord.png" alt="">Discord</td>
+                <td class="mcat">Общение</td>
+                <td class="mstat have">Уже установлено</td>
+              </tr>
+              <tr>
+                <td class="mc"><span class="cbx on"></span></td>
+                <td class="mname"><img src="icons/7zip.7zip.png" alt="">7-Zip</td>
+                <td class="mcat">Утилиты</td>
+                <td class="mstat">—</td>
+              </tr>
+              <tr>
+                <td class="mc"><span class="cbx"></span></td>
+                <td class="mname"><img src="icons/Mozilla.Firefox.png" alt="">Mozilla Firefox</td>
+                <td class="mcat">Браузеры</td>
+                <td class="mstat err">Ошибка</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre class="mock-log">[14:32:10] Список программ: apps.json
+[14:32:10] Загружено программ: 112
+[14:32:11] winget найден: v1.9.25200
+[14:32:14] --- VLC media player [VideoLAN.VLC] ---
+[14:32:15] OK: VLC media player установлено.</pre>
+          <div class="mock-status">
+            <div class="mock-progress"><span class="mock-progress-fill"></span><b>2 / 5</b></div>
+            <span class="mock-label">Устанавливается: VLC media player</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ВОЗМОЖНОСТИ ================= -->
+  <section class="section" id="features">
+    <div class="section-head">
+      <h2>Возможности</h2>
+      <p class="lead">Всё, что нужно для быстрой настройки компьютера.</p>
+    </div>
+    <div class="grid grid-4">
+      <article class="card">
+        <div class="card-icon">📦</div>
+        <h3>Каталог из коробки</h3>
+        <p>Список программ лежит в простом <code>apps.json</code> и легко расширяется вручную.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">🖼️</div>
+        <h3>Иконки программ</h3>
+        <p>Иконки подтягиваются по домену и кэшируются; для остальных рисуется буквенный аватар.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">🔎</div>
+        <h3>Поиск и категории</h3>
+        <p>Поиск по названию, ID, категории и описанию работает вместе с фильтром по категории.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">📜</div>
+        <h3>Чистый журнал</h3>
+        <p>Прогресс winget обновляется через <code>\r</code> и не засоряет журнал «крутящейся палкой».</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Тёмная и светлая тема</h3>
+        <p>По умолчанию — тёмная. Переключение в «Настройках», выбор запоминается.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">✅</div>
+        <h3>Понятные статусы</h3>
+        <p>«Готово», «Уже установлено», «Ошибка» — цветом прямо в таблице.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">🤫</div>
+        <h3>Тихая установка</h3>
+        <p>Один флажок добавляет <code>--silent</code> и не показывает установщики.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Надёжный источник</h3>
+        <p>Установка идёт строго с <code>--source winget</code> в обход проблемного msstore.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= ПРОГРАММЫ ================= -->
+  <section class="section" id="programs">
+    <div class="section-head">
+      <h2>Что можно установить</h2>
+      <p class="lead" id="programsLead">Программы сгруппированы по категориям.</p>
+    </div>
+
+    <div class="catalog-controls">
+      <input id="catalogSearch" class="search" type="text"
+             placeholder="Поиск: название, категория или winget ID" autocomplete="off">
+      <div class="chips" id="catalogChips"></div>
+    </div>
+
+    <div class="programs-grid" id="programsGrid"></div>
+    <p class="empty hidden" id="catalogEmpty">Ничего не найдено — измените запрос.</p>
+  </section>
+
+  <!-- ================= КАК ЗАПУСТИТЬ ================= -->
+  <section class="section" id="run">
+    <div class="section-head">
+      <h2>Как запустить</h2>
+      <p class="lead">Три шага от скачивания до готового набора программ.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <span class="step-num">1</span>
+        <h3>Скачать</h3>
+        <p>Забрать ZIP с EXE-сборкой и распаковать в удобную папку.</p>
+      </article>
+      <article class="step">
+        <span class="step-num">2</span>
+        <h3>Распаковать и запустить</h3>
+        <p>Открыть <code>i-ustanovshchik-po.exe</code>. Java устанавливать не нужно — рантайм уже внутри.</p>
+      </article>
+      <article class="step">
+        <span class="step-num">3</span>
+        <h3>Установить</h3>
+        <p>Отметить программы и нажать «Установить выбранное».</p>
+      </article>
+    </div>
+
+    <!-- ================= ТРЕБОВАНИЯ ================= -->
+    <div class="section-head sub">
+      <h2>Системные требования</h2>
+    </div>
+    <div class="grid grid-3">
+      <article class="card req">
+        <div class="card-icon">🪟</div>
+        <h3>Windows 10 / 11</h3>
+        <p>Любая актуальная редакция. Установка локальная, права администратора подскажет сам winget.</p>
+      </article>
+      <article class="card req">
+        <div class="card-icon">📥</div>
+        <h3>winget</h3>
+        <p>Приложение <b>App Installer</b> из Microsoft Store. Проверяется при старте: <code>winget --version</code>.</p>
+      </article>
+      <article class="card req">
+        <div class="card-icon">☕</div>
+        <h3>Java уже внутри</h3>
+        <p>EXE-сборка включает рантайм Java 21 — устанавливать ничего не нужно. Для портативного <code>.jar</code> понадобится JRE 21.</p>
+      </article>
+    </div>
+
+    <div class="callout">
+      <h3>Команда под капотом</h3>
+      <pre><code>winget install --id &lt;ID&gt; -e --source winget ^
+      --accept-package-agreements --accept-source-agreements ^
+      --disable-interactivity [--silent]</code></pre>
+      <p class="hint">
+        <code>--source winget</code> указан намеренно: без него winget опрашивает ещё и msstore,
+        который часто падает с ошибкой сертификата <code>0x8A15005E</code>.
+        Если пакет уже установлен, winget возвращает ненулевой код — приложение показывает
+        статус <b>«Уже установлено»</b> вместо ошибки.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <h2>Частые вопросы</h2>
+      <p class="lead">Коротко о том, что спрашивают чаще всего.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Нужен ли интернет?</summary>
+        <p>Да. winget скачивает пакеты из интернета, а иконки программ подгружаются по домену и кэшируются в папке <code>icons</code> — повторные запуски работают без сети.</p>
+      </details>
+      <details>
+        <summary>А если программа уже установлена?</summary>
+        <p>winget вернёт ненулевой код, приложение это распознаёт и показывает статус «Уже установлено» вместо «Ошибка».</p>
+      </details>
+      <details>
+        <summary>Почему установка идёт только с <code>--source winget</code>?</summary>
+        <p>Без этого флага winget опрашивает ещё и источник msstore, который часто падает с ошибкой сертификата <code>0x8A15005E</code> и срывает установку.</p>
+      </details>
+      <details>
+        <summary>Как добавить свою программу в список?</summary>
+        <p>Откройте <code>apps.json</code> и добавьте объект с полями <code>id</code>, <code>name</code>, <code>category</code>, <code>description</code> и <code>domain</code>. Точный <code>id</code> ищется командой <code>winget search название</code>.</p>
+      </details>
+      <details>
+        <summary>Куда пишется журнал?</summary>
+        <p>Вывод winget дублируется в окне и в файл <code>installer.log</code> рядом с программой.</p>
+      </details>
+      <details>
+        <summary>Что делает «Тихая установка»?</summary>
+        <p>Добавляет к команде флаг <code>--silent</code>: установщики не показывают окна и вопросы.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= СКАЧАТЬ ================= -->
+  <section class="section download-cta" id="download">
+    <div class="cta-card">
+      <div class="cta-text">
+        <h2>Готовы навести порядок в программах?</h2>
+        <p class="lead">Один файл, одна кнопка — и компьютер настроен.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" id="finalDownload"
+           href="https://github.com/Doinwor/i-ustanovshchik-po/releases/latest/download/i-ustanovshchik-po-1.0.0-windows-x64.zip">
+          <span class="dl-ico" aria-hidden="true">⬇</span> Скачать для Windows (.exe)
+        </a>
+        <span class="download-meta">Версия 1.0.0 · <span id="fileSize2">≈ 27 МБ</span> · Windows 10/11</span>
+        <span class="download-meta">Связаться с автором: <a href="mailto:olehmudruk@yanex.by">olehmudruk@yanex.by</a></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <span class="brand-mark small">i</span>
+    <div>
+      <b>i. установщик по</b>
+      <small>Установка программ через winget</small>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <a href="mailto:olehmudruk@yanex.by">olehmudruk@yanex.by</a>
+    <span class="dot">·</span>
+    <span>версия 1.0.0</span>
+    <span class="dot">·</span>
+    <span>создано студией i.</span>
+    <span class="dot">·</span>
+    <span id="footerYear">2026</span>
+  </div>
+</footer>
+
+<script src="js/programs.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
